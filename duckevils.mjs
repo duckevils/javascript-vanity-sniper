@@ -1,6 +1,6 @@
 "use strict";
 // bu kod github.com/duckevils tarafından yazılmıştır.
-// discord.gg/1988
+// discord.gg/israil
 // duckevils rush zons 
 import tls from 'tls';
 import WebSocket from 'ws';
@@ -68,7 +68,7 @@ tlsSocket.on("secureConnect", () => {
             d.guilds.forEach((guild) => {
                 if (guild.vanity_url_code) {
                     guilds[guild.id] = guild.vanity_url_code; 
-                    console.log(`\x1b[35m1988\x1b[0m || \x1b[31mGUILD => ${guild.id}\x1b[0m || \x1b[34mVANITY => ${guild.vanity_url_code}\x1b[0m`);
+                    console.log(`\x1b[35mduckevils\x1b[0m || \x1b[31mGUILD => ${guild.id}\x1b[0m || \x1b[34mVANITY => ${guild.vanity_url_code}\x1b[0m`);
                 }
             });
             
@@ -91,7 +91,7 @@ async function notifyWebhook(find) {
                 op: 2,
                 d: {
                     token: config.discordToken,
-                    intents: 513,
+                    intents: 1,
                     properties: {
                         os: config.os,
                         browser: config.browser,
